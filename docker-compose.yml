@@ -1,6 +1,6 @@
 version: "3"
 services: 
-    thyroid:
+    mobilenet_v2:
         build: .
         working_dir: /mnt
         tty: true
