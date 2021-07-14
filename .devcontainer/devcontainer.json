@@ -15,9 +15,26 @@
     // connected. This is typically a file mount in .devcontainer/docker-compose.yml
     "workspaceFolder": "/mnt",
     // Set *default* container specific settings.json values on container create.
-    "settings": {},
+    "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash",
+        "terminal.integrated.profiles.windows": {
+            "bash": {
+                "path": "/bin/bash",
+            }
+        },
+        "python.pythonPath": "/opt/conda/bin/python",
+        "python.linting.enabled": true,
+        "python.linting.pylintEnabled": false,
+        "python.linting.flake8Enabled": true,
+        "python.linting.flake8Path": "/opt/conda/bin/flake8",
+        "editor.formatOnSave": true,
+        "python.formatting.provider": "black",
+        "python.formatting.yapfPath": "/opt/conda/bin/black",
+    },
     // Add the IDs of extensions you want installed when the container is created.
     "extensions": [
+        "ms-python.python",
+        "njpwerner.autodocstring",
         "donjayamanne.githistory"
     ]
     // Use 'forwardPorts' to make a list of ports inside the container available locally.
