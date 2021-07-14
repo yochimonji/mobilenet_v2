@@ -1,1 +1,2 @@
-# mobilenet_v2
+# hand_drawのためのmobilenet_v2学習用リポジトリ
+創成デザインの授業で使用するhand_drawのためのmobilenet_v2学習用リポジトリ
