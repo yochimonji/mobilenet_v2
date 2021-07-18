@@ -10,7 +10,7 @@ transform_dict = {
     "train": transforms.Compose(
         [
             transforms.Resize((128, 128)),
-            transforms.RandomRotation(25),
+            transforms.RandomRotation(180),
             transforms.RandomResizedCrop(112),
             transforms.RandomHorizontalFlip(),
             transforms.RandomVerticalFlip(),
@@ -90,7 +90,7 @@ def test(dataloader, model):
     )
 
 
-epochs = 5
+epochs = 10
 for t in range(epochs):
     print(f"Epoch {t+1}\n-------------------------------")
     train(train_loader, model, loss_fn, optimizer)
